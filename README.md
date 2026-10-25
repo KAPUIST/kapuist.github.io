@@ -1,6 +1,6 @@
-# 배움의 기록
+# KAPUIST
 
-React + Vite + TypeScript로 만든 개인 학습 블로그입니다. 글은 MDX로 작성하고, 필요한 글에 React 컴포넌트와 ECharts 그래프를 넣습니다.
+React + Vite + TypeScript로 만든 개인 블로그입니다. 글은 MDX로 작성하고, 필요한 글에 React 컴포넌트와 ECharts 그래프를 넣습니다.
 
 ## 실행
 
@@ -46,8 +46,11 @@ import picture from '../assets/my-picture.png'
 
 ## 이름과 소개 수정
 
-- `src/site.ts`: 블로그 이름, 첫 화면 설명
-- `src/App.tsx`의 `About`: 소개 본문
+- `src/site.ts`: 블로그 이름
+- `src/pages/AboutPage.tsx`: About Me 페이지
+- `src/profile.ts`: 소개와 GitHub URL (미입력 항목은 숨김)
+- `src/pages/BlogPage.tsx`: 메인 글 목록
+- `src/assets/profile.png`: 사용자 지정 프로필 사진
 - `index.html`: 초기 페이지 제목과 설명
 - `src/index.css`, `src/App.css`: 스타일
 
@@ -66,7 +69,9 @@ src/posts/       MDX 글과 메타데이터
 src/assets/      글 이미지
 src/components/  글에서 사용하는 React 예제
 src/content.ts   글 자동 수집
-src/site.ts      블로그 기본 문구
+src/site.ts      블로그 이름
+src/pages/       글 목록과 About Me
+src/profile.ts   개인 소개와 링크
 templates/       새 글 템플릿
 ```
 

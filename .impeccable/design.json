@@ -1,17 +1,34 @@
 {
   "schemaVersion": 2,
   "generatedAt": "2026-10-25T09:23:15Z",
-  "title": "Design System: 배움의 기록 (임시 이름)",
+  "title": "Design System: KAPUIST",
   "extensions": {
     "colorMeta": {
-      "green": { "role": "primary", "displayName": "녹색 강조" },
-      "ink": { "role": "neutral", "displayName": "기본 글자" },
-      "muted": { "role": "neutral", "displayName": "보조 글자" },
-      "page": { "role": "neutral", "displayName": "밝은 배경" }
+      "green": {
+        "role": "primary",
+        "displayName": "녹색 강조"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "기본 글자"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "보조 글자"
+      },
+      "page": {
+        "role": "neutral",
+        "displayName": "밝은 배경"
+      }
     },
     "shadows": [],
     "motion": [],
-    "breakpoints": [{ "name": "mobile-max", "value": "640px" }]
+    "breakpoints": [
+      {
+        "name": "mobile-max",
+        "value": "640px"
+      }
+    ]
   },
   "components": [
     {
@@ -64,9 +81,20 @@
   "narrative": {
     "northStar": "담백한 학습 노트",
     "overview": "현재 로컬 기본 셋업의 구현 기록이다. 사용자 확정 방향은 글 목록 중심의 담백한 학습 노트다. 별도 디자인 시안은 없으며 이름과 소개 문구는 임시다. 새로운 브랜드 원칙을 확정하는 문서는 아니다.\n\n밝은 배경에 짙은 글자, 차분한 녹색 강조를 사용한다. 여백과 얇은 구분선으로 글을 나누고 본문 읽기에 집중한다.",
-    "keyCharacteristics": ["그림자 없는 평면 구성", "한국어 본문과 글 목록 중심", "본문 안에서 값을 바꾸는 작은 실험"],
+    "keyCharacteristics": [
+      "그림자 없는 평면 구성",
+      "한국어 본문과 글 목록 중심",
+      "본문 안에서 값을 바꾸는 작은 실험"
+    ],
     "rules": [],
-    "dos": ["**Do** 글 목록과 본문의 읽기 위계를 유지한다.", "**Do** 선택 상태와 그래프 결과를 글자로도 표시한다.", "**Do** 예제 글을 실제 경험이나 측정 결과와 구분한다."],
-    "donts": ["**Don't** 임시 이름과 소개 문구를 확정된 브랜드 사실로 기록한다.", "**Don't** 현재 구현 기록에 없는 그림자, 색상 단계, 동작을 기존 규칙으로 추가한다."]
+    "dos": [
+      "**Do** 글 목록과 본문의 읽기 위계를 유지한다.",
+      "**Do** 선택 상태와 그래프 결과를 글자로도 표시한다.",
+      "**Do** 예제 글을 실제 경험이나 측정 결과와 구분한다."
+    ],
+    "donts": [
+      "**Don't** 임시 이름과 소개 문구를 확정된 브랜드 사실로 기록한다.",
+      "**Don't** 현재 구현 기록에 없는 그림자, 색상 단계, 동작을 기존 규칙으로 추가한다."
+    ]
   }
 }
