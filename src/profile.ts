@@ -2,6 +2,9 @@ import resumeUrl from './assets/kapuist-resume.pdf?url'
 
 export const profile = {
   name: 'KAPUIST',
+  fullName: '손태권',
+  email: "thsxornjs12@gmail.com",
+  phone: "010-9480-3150",
   role: '백엔드 개발자',
   githubUrl: 'https://github.com/KAPUIST',
   resume: {

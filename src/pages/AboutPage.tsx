@@ -10,8 +10,12 @@ export default function AboutPage() {
       <div className="profile">
         <img src={portrait} alt={`${profile.name} 프로필 사진`} width="160" height="160" />
         <div>
-          <h2>{profile.name}</h2>
+          <h2>{profile.fullName}</h2>
           <p className="profile-role">{profile.role}</p>
+          <div className="profile-contact">
+            <a href={`mailto:${profile.email}`}>{profile.email}</a>
+            <a href={`tel:${profile.phone.replace(/[^+0-9]/g, '')}`}>{profile.phone}</a>
+          </div>
           <div className="profile-links">
             <a href={profile.githubUrl}>GitHub</a>
             <a href={profile.resume.url} download={profile.resume.filename}>이력서 다운로드</a>
