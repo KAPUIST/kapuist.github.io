@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-React + Vite + TypeScript + MDX. GitLab Pages는 향후 배포 대상이다.
+React + Vite + TypeScript + MDX. GitHub Pages로 배포한다.
 
 ## Product Purpose
 
@@ -30,4 +30,4 @@ KAPUIST의 개인 블로그와 자기소개. 기술 글을 작성하며 필요�
 
 ## Constraints
 
-로컬에서만 수정한다. GitLab 연결과 배포는 별도 요청이 필요하다. 경력과 링크를 추측해 채우지 않는다.
+공개 저장소와 GitHub Pages에 사진과 이력서를 포함한 최초 배포를 승인받았다. 이후 배포도 사용자 요청에 따라 수동 실행한다. 경력과 링크를 추측해 채우지 않는다.

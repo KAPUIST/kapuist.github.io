@@ -58,11 +58,13 @@ import picture from '../assets/my-picture.png'
 
 About Me는 2026-10-22 최종 이력서를 요약했습니다. 다운로드는 원본 6쪽 PDF(이력서와 경력기술서)를 제공합니다. `src/assets/kapuist-resume.pdf`를 교체하고 `src/profile.ts`의 경력 요약도 수정하세요. 요약은 PDF와 자동 동기화되지 않습니다.
 
-## GitLab Pages
+## GitHub Pages
 
-이번 셋업은 로컬 전용입니다. 원격 저장소, GitLab CI, 배포는 아직 연결하지 않았습니다.
+공개 저장소는 `KAPUIST/kapuist.github.io`, 사이트는 https://kapuist.github.io 입니다.
 
-`base: './'`와 `HashRouter`를 사용하므로 `/블로그경로/#/posts/글-slug` 형태로 동작합니다. 실제 배포 시 GitLab 프로젝트와 공개 범위를 정하고, CI가 `npm ci`와 `npm run build`를 실행한 뒤 `dist`를 Pages 산출물로 게시하도록 구성하면 됩니다.
+배포는 GitHub Actions의 `Deploy GitHub Pages` 워크플로를 수동 실행합니다. 의존성 설치, 정적 검사, 빌드가 성공하면 `dist`를 게시합니다. push만으로는 배포하지 않습니다.
+
+`base: './'`와 `HashRouter`를 사용하므로 글 주소는 `/#/posts/글-slug` 형태입니다.
 
 현재는 SPA입니다. 글별 검색 노출·링크 미리보기·RSS·사이트맵·사전 렌더링은 구현하지 않았습니다. 공개 배포 전에 필요한 범위를 정하세요.
 
