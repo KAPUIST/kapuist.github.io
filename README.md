@@ -26,7 +26,7 @@ npm run lint    # 코드 정적 검사
 3. 본문을 작성합니다. 파일을 저장하면 글 목록에 자동으로 나타납니다.
 4. 예제 글을 자신의 글로 바꿀 때 `example: true`를 지우고, 샘플 안내 인용문도 삭제합니다.
 
-글은 날짜 내림차순으로 정렬합니다. 현재 두 글은 샘플이며 실제 작성자의 경험이나 성과를 나타내지 않습니다.
+글은 날짜 내림차순으로 정렬합니다. 현재 등록된 글은 없습니다.
 
 ## 이미지와 코드
 
@@ -42,7 +42,7 @@ import picture from '../assets/my-picture.png'
 
 ## 인터랙티브 예제
 
-`src/posts/search-complexity.mdx`를 참고합니다. `InteractiveSearch`가 필요한 때에만 ECharts 코드를 로드합니다. 실제 성능 측정과 이론값을 구분해서 설명해 주세요.
+글에서 `src/components/InteractiveSearch.tsx`를 불러와 사용할 수 있습니다. `InteractiveSearch`가 필요한 때에만 ECharts 코드를 로드합니다. 실제 성능 측정과 이론값을 구분해서 설명해 주세요.
 
 ## 이름과 소개 수정
 

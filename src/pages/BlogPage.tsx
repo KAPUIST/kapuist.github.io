@@ -31,7 +31,8 @@ export default function BlogPage() {
         <div className="post-summary"><div className="post-labels">{meta.example && <span className="example-label">예제 글</span>}{meta.interactive && <span className="interactive-label">직접 해보기</span>}</div><h2><Link to={`/posts/${meta.slug}`}>{meta.title}</Link></h2><p>{meta.description}</p><div className="tags">{meta.tags.map(tag => <span key={tag}>{tag}</span>)}</div></div>
         <Link to={`/posts/${meta.slug}`} className="read-link" aria-label={`${meta.title} 읽기`}><Arrow /></Link>
       </article>)}</div>
-      {visible.length === 0 && <div className="empty-state"><h3>아직 일치하는 글이 없어요.</h3><p>다른 단어로 검색하거나 전체 글을 살펴보세요.</p><button type="button" onClick={() => setParams({})}>전체 글 보기</button></div>}
+      {posts.length === 0 && <div className="empty-state"><p>아직 작성한 글이 없습니다.</p></div>}
+      {posts.length > 0 && visible.length === 0 && <div className="empty-state"><h3>아직 일치하는 글이 없어요.</h3><p>다른 단어로 검색하거나 전체 글을 살펴보세요.</p><button type="button" onClick={() => setParams({})}>전체 글 보기</button></div>}
       {posts.some(post => post.meta.example) && <p className="sample-note">예제 표시가 있는 글은 기능 확인용 샘플입니다.</p>}
     </section>
   </>
