@@ -11,10 +11,38 @@ export default function AboutPage() {
         <img src={portrait} alt={`${profile.name} 프로필 사진`} width="160" height="160" />
         <div>
           <h2>{profile.name}</h2>
-          {profile.bio && <p>{profile.bio}</p>}
-          {profile.githubUrl && <a href={profile.githubUrl}>GitHub</a>}
+          <p className="profile-role">{profile.role}</p>
+          <p>{profile.bio}</p>
+          <div className="profile-links">
+            <a href={profile.githubUrl}>GitHub</a>
+            <a href={profile.resume.url} download={profile.resume.filename}>이력서 다운로드</a>
+          </div>
+          <p className="resume-details">{profile.resume.label}</p>
         </div>
       </div>
+      <section className="resume-section" aria-labelledby="experience-title">
+        <h2 id="experience-title">경력</h2>
+        <div className="experience-list">
+          {profile.experience.map(experience => (
+            <article className="experience-row" key={experience.company}>
+              <p className="experience-period">{experience.period}</p>
+              <div>
+                <h3>{experience.company}</h3>
+                <p className="experience-role">{experience.role}</p>
+                <p>{experience.summary}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section className="resume-section" aria-labelledby="skills-title">
+        <h2 id="skills-title">기술</h2>
+        <p>{profile.skills}</p>
+      </section>
+      <section className="resume-section" aria-labelledby="opensource-title">
+        <h2 id="opensource-title">오픈소스</h2>
+        <p>{profile.openSource}</p>
+      </section>
     </section>
   )
 }

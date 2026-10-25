@@ -48,11 +48,15 @@ import picture from '../assets/my-picture.png'
 
 - `src/site.ts`: 블로그 이름
 - `src/pages/AboutPage.tsx`: About Me 페이지
-- `src/profile.ts`: 소개와 GitHub URL (미입력 항목은 숨김)
+- `src/profile.ts`: 소개, GitHub URL, 경력 요약과 다운로드 정보
 - `src/pages/BlogPage.tsx`: 메인 글 목록
 - `src/assets/profile.png`: 사용자 지정 프로필 사진
 - `index.html`: 초기 페이지 제목과 설명
 - `src/index.css`, `src/App.css`: 스타일
+
+## 이력서 업데이트
+
+About Me는 2026-10-22 최종 이력서를 요약했습니다. 다운로드는 원본 6쪽 PDF(이력서와 경력기술서)를 제공합니다. `src/assets/kapuist-resume.pdf`를 교체하고 `src/profile.ts`의 요약과 쪽수도 수정하세요. 요약은 PDF와 자동 동기화되지 않습니다.
 
 ## GitLab Pages
 
