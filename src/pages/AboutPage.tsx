@@ -12,12 +12,10 @@ export default function AboutPage() {
         <div>
           <h2>{profile.name}</h2>
           <p className="profile-role">{profile.role}</p>
-          <p>{profile.bio}</p>
           <div className="profile-links">
             <a href={profile.githubUrl}>GitHub</a>
             <a href={profile.resume.url} download={profile.resume.filename}>이력서 다운로드</a>
           </div>
-          <p className="resume-details">{profile.resume.label}</p>
         </div>
       </div>
       <section className="resume-section" aria-labelledby="experience-title">

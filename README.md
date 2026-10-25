@@ -56,7 +56,7 @@ import picture from '../assets/my-picture.png'
 
 ## 이력서 업데이트
 
-About Me는 2026-10-22 최종 이력서를 요약했습니다. 다운로드는 원본 6쪽 PDF(이력서와 경력기술서)를 제공합니다. `src/assets/kapuist-resume.pdf`를 교체하고 `src/profile.ts`의 요약과 쪽수도 수정하세요. 요약은 PDF와 자동 동기화되지 않습니다.
+About Me는 2026-10-22 최종 이력서를 요약했습니다. 다운로드는 원본 6쪽 PDF(이력서와 경력기술서)를 제공합니다. `src/assets/kapuist-resume.pdf`를 교체하고 `src/profile.ts`의 경력 요약도 수정하세요. 요약은 PDF와 자동 동기화되지 않습니다.
 
 ## GitLab Pages
 

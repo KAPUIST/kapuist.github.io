@@ -3,12 +3,10 @@ import resumeUrl from './assets/kapuist-resume.pdf?url'
 export const profile = {
   name: 'KAPUIST',
   role: '백엔드 개발자',
-  bio: 'TypeScript와 NestJS로 백엔드를 개발합니다. 주문·결제, 로봇 배송, 예약 서비스를 만들었고, 현재는 AI 문항 생성·검수 시스템을 개발하고 있습니다.',
   githubUrl: 'https://github.com/KAPUIST',
   resume: {
     url: resumeUrl,
     filename: 'KAPUIST-resume.pdf',
-    label: 'PDF · 6쪽 · 이력서와 경력기술서',
   },
   experience: [
     {
