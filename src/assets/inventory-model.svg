@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" fill="none">
+  <rect width="900" height="300" rx="12" fill="#f0f1e9"/>
+  <g stroke="#b9c2b2" stroke-width="1.5"><rect x="38" y="78" width="220" height="144" rx="8"/><rect x="340" y="44" width="220" height="212" rx="8"/><rect x="642" y="78" width="220" height="144" rx="8"/><path d="M38 124h220M340 90h220M642 124h220"/></g>
+  <g fill="#293b2e" font-family="monospace" font-size="18"><text x="60" y="107">players</text><text x="362" y="73">inventory</text><text x="664" y="107">items</text><text x="60" y="160">id</text><text x="60" y="193">name</text><text x="362" y="128">player_id</text><text x="362" y="175">item_id</text><text x="362" y="222">quantity</text><text x="664" y="160">id</text><text x="664" y="193">name</text></g>
+  <g stroke="#3e644d" stroke-width="2"><path d="M258 153h40v-30h42m-7-6 7 6-7 6M642 153h-40v17h-42m7-6-7 6 7 6"/></g>
+</svg>

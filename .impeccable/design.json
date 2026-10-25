@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-25T09:23:15Z",
+  "title": "Design System: 배움의 기록 (임시 이름)",
+  "extensions": {
+    "colorMeta": {
+      "green": { "role": "primary", "displayName": "녹색 강조" },
+      "ink": { "role": "neutral", "displayName": "기본 글자" },
+      "muted": { "role": "neutral", "displayName": "보조 글자" },
+      "page": { "role": "neutral", "displayName": "밝은 배경" }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [{ "name": "mobile-max", "value": "640px" }]
+  },
+  "components": [
+    {
+      "name": "전체 글 보기",
+      "kind": "button",
+      "refersTo": "reset-button",
+      "description": "빈 검색 결과에서 전체 글로 돌아가는 버튼. 별도 hover 색은 현재 없다.",
+      "html": "<button class=\"ds-reset\">전체 글 보기</button>",
+      "css": ".ds-reset{font:inherit;background:var(--green,#3d624c);color:#fff;border:none;padding:11px 20px;border-radius:6px;cursor:pointer}.ds-reset:focus-visible{outline:2px solid var(--green,#3d624c);outline-offset:5px}"
+    },
+    {
+      "name": "주제 필터",
+      "kind": "chip",
+      "refersTo": "filter",
+      "description": "선택 상태를 aria-pressed로 표시하는 주제 필터.",
+      "html": "<button class=\"ds-filter\" aria-pressed=\"true\">전체</button> <button class=\"ds-filter\" aria-pressed=\"false\">주제</button>",
+      "css": ".ds-filter{font:inherit;font-size:13px;border:1px solid transparent;border-radius:6px;padding:7px 13px;background:transparent;color:var(--muted,#626b5d);cursor:pointer}.ds-filter[aria-pressed=true]{background:var(--soft,#edf0e6);color:var(--green,#3d624c)}.ds-filter:hover{color:var(--green,#3d624c);border-color:var(--line,#e0e3d9)}.ds-filter:focus-visible{outline:2px solid var(--green,#3d624c);outline-offset:5px}"
+    },
+    {
+      "name": "글 검색",
+      "kind": "input",
+      "refersTo": "search",
+      "description": "포커스에서 아래 선으로 상태를 표시하는 검색 입력.",
+      "html": "<input class=\"ds-search\" type=\"search\" aria-label=\"글 검색\" placeholder=\"궁금한 주제 찾기\">",
+      "css": ".ds-search{font:inherit;font-size:13px;width:190px;max-width:100%;border:none;border-bottom:1px solid transparent;border-radius:0;background:transparent;color:var(--ink,#292f28);padding:10px 0;caret-color:var(--green,#3d624c)}.ds-search::placeholder{color:var(--muted,#626b5d);opacity:1}.ds-search:focus,.ds-search:focus-visible{border-bottom-color:var(--green,#3d624c);outline:none}"
+    },
+    {
+      "name": "주 메뉴",
+      "kind": "nav",
+      "description": "현재 페이지를 녹색과 밑줄로 표시한다. 별도 hover 색은 현재 없다.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"주 메뉴\"><a href=\"#/\" aria-current=\"page\">글</a><a href=\"#/about\">이 블로그</a></nav>",
+      "css": ".ds-nav{display:flex;gap:30px;align-items:center}.ds-nav a{color:var(--muted,#626b5d);text-decoration:none;padding:12px 0;font-size:14px}.ds-nav a[aria-current=page]{color:var(--green,#3d624c);text-decoration:underline;text-underline-offset:10px}.ds-nav a:focus-visible{outline:2px solid var(--green,#3d624c);outline-offset:5px;border-radius:3px}"
+    },
+    {
+      "name": "태그",
+      "kind": "chip",
+      "description": "클릭 제어가 아닌 글의 주제 표시.",
+      "html": "<div class=\"ds-tags\"><span>학습</span><span>예제</span></div>",
+      "css": ".ds-tags{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--muted,#626b5d)}.ds-tags span::before{content:'#';margin-right:2px;color:var(--green,#3d624c)}"
+    },
+    {
+      "name": "본문 실험 상자",
+      "kind": "custom",
+      "refersTo": "experiment",
+      "description": "그래프와 입력을 담는 본문 영역. 미리보기는 외곽과 입력 스타일만 보여 준다.",
+      "html": "<figure class=\"ds-experiment\"><figcaption><strong>직접 해보기</strong><span>값을 바꾸며 비교하는 예제</span></figcaption><label for=\"ds-range\">입력 값</label><input id=\"ds-range\" type=\"range\" min=\"0\" max=\"100\" value=\"50\"></figure>",
+      "css": ".ds-experiment{margin:28px 0;padding:26px;border:1px solid var(--line,#e0e3d9);border-radius:12px;background:#f8f9f3;color:var(--ink,#292f28)}.ds-experiment figcaption{font-size:12px;line-height:1.8;color:var(--muted,#626b5d);margin:0 0 24px}.ds-experiment strong{display:block;color:var(--ink,#292f28);font-size:17px;font-weight:650}.ds-experiment span{display:block;margin-top:4px}.ds-experiment label{font-size:13px}.ds-experiment input{display:block;width:100%;min-height:32px;margin:5px 0;accent-color:var(--green,#3d624c);cursor:pointer}.ds-experiment input:focus-visible{outline:2px solid var(--green,#3d624c);outline-offset:5px;border-radius:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "담백한 학습 노트",
+    "overview": "현재 로컬 기본 셋업의 구현 기록이다. 사용자 확정 방향은 글 목록 중심의 담백한 학습 노트다. 별도 디자인 시안은 없으며 이름과 소개 문구는 임시다. 새로운 브랜드 원칙을 확정하는 문서는 아니다.\n\n밝은 배경에 짙은 글자, 차분한 녹색 강조를 사용한다. 여백과 얇은 구분선으로 글을 나누고 본문 읽기에 집중한다.",
+    "keyCharacteristics": ["그림자 없는 평면 구성", "한국어 본문과 글 목록 중심", "본문 안에서 값을 바꾸는 작은 실험"],
+    "rules": [],
+    "dos": ["**Do** 글 목록과 본문의 읽기 위계를 유지한다.", "**Do** 선택 상태와 그래프 결과를 글자로도 표시한다.", "**Do** 예제 글을 실제 경험이나 측정 결과와 구분한다."],
+    "donts": ["**Don't** 임시 이름과 소개 문구를 확정된 브랜드 사실로 기록한다.", "**Don't** 현재 구현 기록에 없는 그림자, 색상 단계, 동작을 기존 규칙으로 추가한다."]
+  }
+}
