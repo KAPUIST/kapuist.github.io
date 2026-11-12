@@ -1,7 +1,7 @@
-@import '@fontsource-variable/noto-sans-kr';
+@import 'pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css';
 /* 옛한글 자모만 담은 폰트. 첫가끝 자모를 한 글자로 조합해 보여 준다. */
 @font-face { font-family: 'Old Hangul'; src: url('./assets/fonts/old-hangul.woff2') format('woff2'); unicode-range: U+1100-11FF, U+A960-A97F, U+D7B0-D7FF; font-display: swap; }
-:root { font-family: 'Old Hangul', 'Noto Sans KR Variable', sans-serif; color: #191f28; background: #ffffff; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; --ink: #191f28; --muted: #6b7684; --accent: #1b64da; --line: #e5e8eb; --soft: #f2f4f6; color-scheme: light; }
+:root { font-family: 'Old Hangul', 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo', sans-serif; color: #191f28; background: #ffffff; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; --ink: #191f28; --muted: #6b7684; --accent: #1b64da; --line: #e5e8eb; --soft: #f2f4f6; color-scheme: light; }
 * { box-sizing: border-box; scrollbar-width: thin; scrollbar-color: #b0b8c1 #ffffff; }
 body { margin: 0; min-width: 320px; }
 a { color: var(--accent); text-underline-offset: 4px; }

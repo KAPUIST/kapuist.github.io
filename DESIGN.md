@@ -19,25 +19,25 @@ colors:
   scrollbar: "#b0b8c1"
 typography:
   display:
-    fontFamily: "'Noto Sans KR Variable', sans-serif"
+    fontFamily: "'Pretendard Variable', sans-serif"
     fontSize: "clamp(30px, 4.5vw, 44px)"
     fontWeight: 650
     lineHeight: 1.5
     letterSpacing: "-.035em"
   headline:
-    fontFamily: "'Noto Sans KR Variable', sans-serif"
+    fontFamily: "'Pretendard Variable', sans-serif"
     fontSize: "clamp(27px, 4vw, 36px)"
     fontWeight: 650
     lineHeight: 1.55
     letterSpacing: "-.035em"
   title:
-    fontFamily: "'Noto Sans KR Variable', sans-serif"
+    fontFamily: "'Pretendard Variable', sans-serif"
     fontSize: "20px"
     fontWeight: 600
     lineHeight: 1.55
     letterSpacing: "-.025em"
   body:
-    fontFamily: "'Noto Sans KR Variable', sans-serif"
+    fontFamily: "'Pretendard Variable', sans-serif"
     fontSize: "16px"
     lineHeight: 1.95
   code:
@@ -102,7 +102,7 @@ components:
 
 ## Typography
 
-본문과 제목은 Noto Sans KR Variable, 코드는 SFMono-Regular와 Consolas 대체 글꼴을 사용한다. 글꼴은 로컬 패키지로 가져온다.
+본문과 제목은 Pretendard Variable, 코드는 SFMono-Regular와 Consolas 대체 글꼴을 사용한다. 글꼴은 로컬 패키지로 가져온다.
 
 `display`는 첫 화면 제목, `headline`은 글·소개 제목, `title`은 글 목록 제목, `body`는 글 본문이다. 본문 소제목은 h2 (23px, 650, 1.6), h3 (19px)다. 목록 설명은 14px/1.9, 날짜와 본문 메타데이터는 12px, 태그와 예제 표시는 11px다. 날짜·실험 결과는 고정 폭 숫자를 사용한다.
 
