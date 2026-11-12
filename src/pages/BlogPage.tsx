@@ -1,6 +1,5 @@
 import { Link, useSearchParams } from 'react-router-dom'
 import { posts } from '../content'
-import Arrow from '../components/Arrow'
 import PageTitle from '../components/PageTitle'
 
 export default function BlogPage() {
@@ -27,9 +26,8 @@ export default function BlogPage() {
       <div className="filters" aria-label="주제 필터">{categories.map(item => <button type="button" key={item} aria-pressed={category === item} onClick={() => update('category', item)}>{item}</button>)}</div>
       <p className="sr-only" role="status">{visible.length}개의 글</p>
       <div className="post-list">{visible.map(({ meta }) => <article className="post-row" key={meta.slug}>
-        <div className="post-date"><time dateTime={meta.date}>{meta.date.replaceAll('-', '.')}</time><span>{meta.category}</span></div>
-        <div className="post-summary"><div className="post-labels">{meta.example && <span className="example-label">예제 글</span>}{meta.interactive && <span className="interactive-label">직접 해보기</span>}</div><h2><Link to={`/posts/${meta.slug}`}>{meta.title}</Link></h2><p>{meta.description}</p><div className="tags">{meta.tags.map(tag => <span key={tag}>{tag}</span>)}</div></div>
-        <Link to={`/posts/${meta.slug}`} className="read-link" aria-label={`${meta.title} 읽기`}><Arrow /></Link>
+        <div className="post-summary"><div className="post-date"><span>{meta.category}</span>{meta.date && <time dateTime={meta.date}>{meta.date.replaceAll('-', '.')}</time>}{meta.example && <span className="example-label">예제 글</span>}{meta.interactive && <span className="interactive-label">직접 해보기</span>}</div><h2><Link to={`/posts/${meta.slug}`}>{meta.title}</Link></h2><p>{meta.description}</p><div className="tags">{meta.tags.map(tag => <span key={tag}>{tag}</span>)}</div></div>
+        {meta.thumbnail && <Link to={`/posts/${meta.slug}`} className="post-thumbnail" tabIndex={-1} aria-hidden="true"><img src={meta.thumbnail} alt="" loading="lazy" /></Link>}
       </article>)}</div>
       {posts.length === 0 && <div className="empty-state"><p>아직 작성한 글이 없습니다.</p></div>}
       {posts.length > 0 && visible.length === 0 && <div className="empty-state"><h3>아직 일치하는 글이 없어요.</h3><p>다른 단어로 검색하거나 전체 글을 살펴보세요.</p><button type="button" onClick={() => setParams({})}>전체 글 보기</button></div>}
