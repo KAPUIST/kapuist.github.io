@@ -27,7 +27,7 @@ function Post() {
   if (!post) return <NotFound />
   const { meta, Content } = post
   return <article className="article-page"><PageTitle title={meta.title} /><Link className="back-link" to="/"><Arrow back /> 모든 글</Link>
-    <header className="article-header"><div className="article-meta"><span>{meta.category}</span><time dateTime={meta.date}>{meta.date.replaceAll('-', '.')}</time>{meta.example && <span>예제 글</span>}</div><h1>{meta.title}</h1><p>{meta.description}</p></header>
+    <header className="article-header"><div className="article-meta"><span>{meta.category}</span>{meta.date && <time dateTime={meta.date}>{meta.date.replaceAll('-', '.')}</time>}{meta.example && <span>예제 글</span>}</div><h1>{meta.title}</h1><p>{meta.description}</p></header>
     <div className="prose"><Content /></div>
     <div className="article-end"><Link to="/">글 목록 <Arrow /></Link></div>
   </article>

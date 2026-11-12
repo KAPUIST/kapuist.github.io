@@ -27,7 +27,7 @@ export default function BlogPage() {
       <div className="filters" aria-label="주제 필터">{categories.map(item => <button type="button" key={item} aria-pressed={category === item} onClick={() => update('category', item)}>{item}</button>)}</div>
       <p className="sr-only" role="status">{visible.length}개의 글</p>
       <div className="post-list">{visible.map(({ meta }) => <article className="post-row" key={meta.slug}>
-        <div className="post-date"><time dateTime={meta.date}>{meta.date.replaceAll('-', '.')}</time><span>{meta.category}</span></div>
+        <div className="post-date">{meta.date && <time dateTime={meta.date}>{meta.date.replaceAll('-', '.')}</time>}<span>{meta.category}</span></div>
         <div className="post-summary"><div className="post-labels">{meta.example && <span className="example-label">예제 글</span>}{meta.interactive && <span className="interactive-label">직접 해보기</span>}</div><h2><Link to={`/posts/${meta.slug}`}>{meta.title}</Link></h2><p>{meta.description}</p><div className="tags">{meta.tags.map(tag => <span key={tag}>{tag}</span>)}</div></div>
         <Link to={`/posts/${meta.slug}`} className="read-link" aria-label={`${meta.title} 읽기`}><Arrow /></Link>
       </article>)}</div>
