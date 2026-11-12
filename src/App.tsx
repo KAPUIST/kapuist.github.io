@@ -6,6 +6,7 @@ import { site } from './site'
 import './App.css'
 import Arrow from './components/Arrow'
 import PageTitle from './components/PageTitle'
+import Toc from './components/Toc'
 import BlogPage from './pages/BlogPage'
 import AboutPage from './pages/AboutPage'
 
@@ -26,7 +27,7 @@ function Post() {
   const { meta, Content } = post
   return <article className="article-page"><PageTitle title={meta.title} /><Link className="back-link" to="/"><Arrow back /> 모든 글</Link>
     <header className="article-header"><div className="article-meta"><span>{meta.category}</span>{meta.date && <time dateTime={meta.date}>{meta.date.replaceAll('-', '.')}</time>}{meta.example && <span>예제 글</span>}</div><h1>{meta.title}</h1><p>{meta.description}</p></header>
-    <div className="prose"><Content /></div>
+    <div className="article-body"><div className="prose"><Content /></div><Toc slug={meta.slug} /></div>
     <div className="article-end"><Link to="/">글 목록 <Arrow /></Link></div>
   </article>
 }
