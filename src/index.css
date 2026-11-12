@@ -1,5 +1,7 @@
 @import '@fontsource-variable/noto-sans-kr';
-:root { font-family: 'Noto Sans KR Variable', sans-serif; color: #292f28; background: #fafaf6; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; --ink: #292f28; --muted: #626b5d; --green: #3d624c; --line: #e0e3d9; --soft: #edf0e6; color-scheme: light; }
+/* 옛한글 자모만 담은 폰트. 첫가끝 자모를 한 글자로 조합해 보여 준다. */
+@font-face { font-family: 'Old Hangul'; src: url('./assets/fonts/old-hangul.woff2') format('woff2'); unicode-range: U+1100-11FF, U+A960-A97F, U+D7B0-D7FF; font-display: swap; }
+:root { font-family: 'Old Hangul', 'Noto Sans KR Variable', sans-serif; color: #292f28; background: #fafaf6; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; --ink: #292f28; --muted: #626b5d; --green: #3d624c; --line: #e0e3d9; --soft: #edf0e6; color-scheme: light; }
 * { box-sizing: border-box; scrollbar-width: thin; scrollbar-color: #9ba792 #fafaf6; }
 body { margin: 0; min-width: 320px; }
 a { color: var(--green); text-underline-offset: 4px; }
@@ -8,7 +10,7 @@ button, a, input { -webkit-tap-highlight-color: transparent; }
 button { cursor: pointer; }
 input { caret-color: var(--green); }
 input::placeholder { color: var(--muted); opacity: 1; }
-code, pre { font-family: 'SFMono-Regular', Consolas, monospace; }
+code, pre { font-family: 'Old Hangul', 'SFMono-Regular', Consolas, monospace; }
 ::selection { background: #dce6d3; color: #203c2c; }
 :focus-visible { outline: 2px solid var(--green); outline-offset: 5px; border-radius: 3px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
