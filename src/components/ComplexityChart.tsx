@@ -28,11 +28,11 @@ export default function ComplexityChart() {
       animationDurationUpdate: 180,
       grid: { left: 52, right: 22, top: 30, bottom: 45 },
       tooltip: { trigger: 'axis', confine: true },
-      xAxis: { type: 'value', name: '아이템 수', nameLocation: 'middle', nameGap: 28, min: 1, max: count, axisLabel: { color: '#62665c' }, splitLine: { show: false } },
-      yAxis: { type: 'value', name: '최대 비교 횟수', min: 0, max: count, axisLabel: { color: '#62665c' }, splitLine: { lineStyle: { color: '#e3e5db' } } },
+      xAxis: { type: 'value', name: '아이템 수', nameLocation: 'middle', nameGap: 28, min: 1, max: count, axisLabel: { color: '#6b7684' }, splitLine: { show: false } },
+      yAxis: { type: 'value', name: '최대 비교 횟수', min: 0, max: count, axisLabel: { color: '#6b7684' }, splitLine: { lineStyle: { color: '#e5e8eb' } } },
       series: [
         { name: '순차 탐색', type: 'line', showSymbol: false, lineStyle: { width: 2.5, color: '#a66b46' }, itemStyle: { color: '#a66b46' }, data: xs.map(x => [x, x]) },
-        { name: '이진 탐색', type: 'line', showSymbol: false, lineStyle: { width: 2.5, color: '#3e644d' }, itemStyle: { color: '#3e644d' }, data: xs.map(x => [x, steps(x)]) },
+        { name: '이진 탐색', type: 'line', showSymbol: false, lineStyle: { width: 2.5, color: '#3182f6' }, itemStyle: { color: '#3182f6' }, data: xs.map(x => [x, steps(x)]) },
       ],
     })
   }, [count])

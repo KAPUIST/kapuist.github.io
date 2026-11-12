@@ -1,22 +1,22 @@
 ---
-name: "KAPUIST"
+name: "LUKE"
 description: "글 목록과 About Me를 분리한 개인 블로그"
 colors:
-  ink: "#292f28"
-  muted: "#626b5d"
-  green: "#3d624c"
-  line: "#e0e3d9"
-  soft: "#edf0e6"
-  page: "#fafaf6"
-  code-bg: "#edf0e8"
-  code-ink: "#243c2d"
-  experiment-bg: "#f8f9f3"
+  ink: "#191f28"
+  muted: "#6b7684"
+  accent: "#1b64da"
+  line: "#e5e8eb"
+  soft: "#f2f4f6"
+  page: "#ffffff"
+  code-bg: "#f2f4f6"
+  code-ink: "#333d4b"
+  experiment-bg: "#f9fafb"
   linear: "#a66b46"
-  binary: "#3e644d"
+  binary: "#3182f6"
   white: "#fff"
-  selection-bg: "#dce6d3"
-  selection-ink: "#203c2c"
-  scrollbar: "#9ba792"
+  selection-bg: "#e8f3ff"
+  selection-ink: "#1b64da"
+  scrollbar: "#b0b8c1"
 typography:
   display:
     fontFamily: "'Noto Sans KR Variable', sans-serif"
@@ -53,7 +53,7 @@ rounded:
   experiment: "12px"
 components:
   reset-button:
-    backgroundColor: "{colors.green}"
+    backgroundColor: "{colors.accent}"
     textColor: "{colors.white}"
     rounded: "{rounded.control}"
     padding: "11px 20px"
@@ -64,7 +64,7 @@ components:
     padding: "7px 13px"
   filter-selected:
     backgroundColor: "{colors.soft}"
-    textColor: "{colors.green}"
+    textColor: "{colors.accent}"
     rounded: "{rounded.control}"
     padding: "7px 13px"
   search:
@@ -78,13 +78,13 @@ components:
     padding: "26px"
 ---
 
-# Design System: KAPUIST
+# Design System: LUKE
 
 ## Overview
 
 **Creative North Star: "담백한 글 목록"**
 
-현재 로컬 기본 셋업의 구현 기록이다. 사용자 확정 방향은 글 목록과 About Me를 분리한 개인 블로그다. 이름은 KAPUIST로 확정했다. 메인에는 소개 문구를 두지 않는다. 새로운 브랜드 원칙을 확정하는 문서는 아니다.
+현재 로컬 기본 셋업의 구현 기록이다. 사용자 확정 방향은 글 목록과 About Me를 분리한 개인 블로그다. 이름은 LUKE로 확정했다. 메인에는 소개 문구를 두지 않는다. 새로운 브랜드 원칙을 확정하는 문서는 아니다.
 
 밝은 배경에 짙은 글자, 차분한 녹색 강조를 사용한다. 여백과 얇은 구분선으로 글을 나누고 본문 읽기에 집중한다.
 
@@ -96,7 +96,7 @@ components:
 
 ## Colors
 
-`green`은 링크, 선택 상태, 강조 문구와 입력 제어에 사용한다. `ink`는 기본 글자, `muted`는 설명과 메타데이터, `line`은 구분선, `soft`는 선택 필터와 인라인 코드 배경이다.
+`accent`은 링크, 선택 상태, 강조 문구와 입력 제어에 사용한다. `ink`는 기본 글자, `muted`는 설명과 메타데이터, `line`은 구분선, `soft`는 선택 필터와 인라인 코드 배경이다.
 
 `page`는 전체 배경이다. 코드 블록은 `code-bg`와 `code-ink`, 실험 영역은 `experiment-bg`로 구분한다. 그래프 결과 범례는 `linear`와 `binary`를 사용한다. 두 그래프 색은 별도 브랜드 강조색으로 일반화하지 않는다.
 

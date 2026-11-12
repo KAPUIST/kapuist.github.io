@@ -9,8 +9,6 @@ import PageTitle from './components/PageTitle'
 import BlogPage from './pages/BlogPage'
 import AboutPage from './pages/AboutPage'
 
-const currentYear = new Date().getFullYear()
-
 function ScrollToPage() {
   const { pathname } = useLocation()
   const previous = useRef(pathname)
@@ -47,6 +45,5 @@ export default function App() {
   return <HashRouter><ScrollToPage /><a className="skip-link" href="#main" onClick={event => { event.preventDefault(); document.getElementById('main')?.focus() }}>본문으로 건너뛰기</a><div className="site-shell">
     <header className="site-header"><Link className="wordmark" to="/" aria-label={`${site.title} 홈`}>{site.title}</Link><nav aria-label="주 메뉴"><NavLink to="/" end>글</NavLink><NavLink to="/about">About Me</NavLink></nav></header>
     <main id="main" tabIndex={-1}><PageErrorBoundary><Routes><Route path="/" element={<BlogPage />} /><Route path="/posts/:slug" element={<Post />} /><Route path="/about" element={<AboutPage />} /><Route path="*" element={<NotFound />} /></Routes></PageErrorBoundary></main>
-    <footer className="site-footer"><span>{site.title}</span><span>{currentYear}</span></footer>
   </div></HashRouter>
 }

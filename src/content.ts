@@ -7,6 +7,7 @@ export interface PostMeta {
   date?: string
   category: string
   tags: string[]
+  thumbnail?: string
   interactive?: boolean
   example?: boolean
 }
